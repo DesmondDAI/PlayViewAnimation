@@ -23,14 +23,17 @@ class FeatureListTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyTableViewCell", for: indexPath)
         switch indexPath.row {
         case 0:
-            cell.textLabel?.text = "交互式动画"
+            cell.textLabel?.text = "UIViewPropertyAnimator交互式动画"
+            
+        case 1:
+            cell.textLabel?.text = "UIKit Dynamics交互式动画"
             
         default:
             break
@@ -42,7 +45,10 @@ class FeatureListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            performSegue(withIdentifier: "goToInteractiveAnimationPage", sender: self)
+            performSegue(withIdentifier: Constants.SegueID.listToViewPropertyAnimatorVC, sender: self)
+            
+        case 1:
+            performSegue(withIdentifier: Constants.SegueID.listToDynamicUpDownCardVC, sender: self)
             
         default:
             break

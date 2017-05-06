@@ -35,7 +35,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="zgL-vk-1i9"/>
                     <connections>
-                        <segue destination="U2e-ng-a3Z" kind="show" identifier="goToInteractiveAnimationPage" id="v7M-uB-UBK"/>
+                        <segue destination="U2e-ng-a3Z" kind="show" identifier="goToPropertyAnimatorVC" id="v7M-uB-UBK"/>
+                        <segue destination="PYr-Bg-dp6" kind="show" identifier="goToDynamicUpDownCardVC" id="x3C-KW-6If"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZU-uQ-dc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -85,6 +86,40 @@
             </objects>
             <point key="canvasLocation" x="1695" y="-286"/>
         </scene>
+        <!--Dynamic Up Down Card View Controller-->
+        <scene sceneID="VbQ-oq-YmP">
+            <objects>
+                <viewController id="PYr-Bg-dp6" customClass="DynamicUpDownCardViewController" customModule="ViewAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bo2-kt-dcl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xoa-ha-WnD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eAh-L1-3sn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p79-m0-DcY">
+                                <rect key="frame" x="0.0" y="164" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="W1N-DF-zWS">
+                                        <rect key="frame" x="67" y="89" width="240" height="240"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91261411046013619" green="0.59652903335875962" blue="0.38437367210508333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardView" destination="p79-m0-DcY" id="vnV-sI-PMD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chI-D3-3VD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694" y="435"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="E5f-xc-dyJ">
             <objects>
@@ -102,4 +137,7 @@
             <point key="canvasLocation" x="-278" y="305"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cat" width="736" height="736"/>
+    </resources>
 </document>

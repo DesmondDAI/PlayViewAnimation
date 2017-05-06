@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BB2733DCEB2911BFC2A66FA7 /* Pods_ViewAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB5E878B6C359739521CA48 /* Pods_ViewAnimation.framework */; };
+		EE75E3FB1EBD8D9A0097C485 /* DynamicUpDownCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75E3FA1EBD8D9A0097C485 /* DynamicUpDownCardViewController.swift */; };
+		EE75E3FE1EBD8DCB0097C485 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75E3FD1EBD8DCB0097C485 /* Constants.swift */; };
+		EE75E4001EBD92240097C485 /* CardBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75E3FF1EBD92240097C485 /* CardBehavior.swift */; };
+		EE75E4031EBD9D8D0097C485 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75E4021EBD9D8D0097C485 /* DraggableCardView.swift */; };
 		EE7BE0071EB8E3C3003CB440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7BE0061EB8E3C3003CB440 /* AppDelegate.swift */; };
 		EE7BE0091EB8E3C3003CB440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7BE0081EB8E3C3003CB440 /* ViewController.swift */; };
 		EE7BE00C1EB8E3C3003CB440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7BE00A1EB8E3C3003CB440 /* Main.storyboard */; };
@@ -21,6 +25,10 @@
 		0133373BE727B86711EC08E5 /* Pods-ViewAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViewAnimation/Pods-ViewAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 		3778C01D663E1F0CB8A700DD /* Pods-ViewAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViewAnimation/Pods-ViewAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		BFB5E878B6C359739521CA48 /* Pods_ViewAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE75E3FA1EBD8D9A0097C485 /* DynamicUpDownCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicUpDownCardViewController.swift; sourceTree = "<group>"; };
+		EE75E3FD1EBD8DCB0097C485 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE75E3FF1EBD92240097C485 /* CardBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBehavior.swift; sourceTree = "<group>"; };
+		EE75E4021EBD9D8D0097C485 /* DraggableCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCardView.swift; sourceTree = "<group>"; };
 		EE7BE0031EB8E3C3003CB440 /* ViewAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7BE0061EB8E3C3003CB440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE7BE0081EB8E3C3003CB440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +69,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EE75E3FC1EBD8DB70097C485 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EE75E3FD1EBD8DCB0097C485 /* Constants.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		EE75E4011EBD9D6B0097C485 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE75E4021EBD9D8D0097C485 /* DraggableCardView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		EE7BDFFA1EB8E3C3003CB440 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +106,8 @@
 		EE7BE0051EB8E3C3003CB440 /* ViewAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				EE75E4011EBD9D6B0097C485 /* Views */,
+				EE75E3FC1EBD8DB70097C485 /* Utility */,
 				EE7BE0181EB8E3EF003CB440 /* Controllers */,
 				EE7BE0061EB8E3C3003CB440 /* AppDelegate.swift */,
 				EE7BE0081EB8E3C3003CB440 /* ViewController.swift */,
@@ -89,6 +115,7 @@
 				EE7BE00D1EB8E3C3003CB440 /* Assets.xcassets */,
 				EE7BE00F1EB8E3C3003CB440 /* LaunchScreen.storyboard */,
 				EE7BE0121EB8E3C3003CB440 /* Info.plist */,
+				EE75E3FF1EBD92240097C485 /* CardBehavior.swift */,
 			);
 			path = ViewAnimation;
 			sourceTree = "<group>";
@@ -98,6 +125,7 @@
 			children = (
 				EE7BE0191EB8E420003CB440 /* FeatureListTableViewController.swift */,
 				EE7BE01B1EB8E586003CB440 /* InteractiveAnimationViewController.swift */,
+				EE75E3FA1EBD8D9A0097C485 /* DynamicUpDownCardViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -226,10 +254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE75E4031EBD9D8D0097C485 /* DraggableCardView.swift in Sources */,
 				EE7BE01C1EB8E586003CB440 /* InteractiveAnimationViewController.swift in Sources */,
 				EE7BE0091EB8E3C3003CB440 /* ViewController.swift in Sources */,
+				EE75E3FB1EBD8D9A0097C485 /* DynamicUpDownCardViewController.swift in Sources */,
 				EE7BE01A1EB8E420003CB440 /* FeatureListTableViewController.swift in Sources */,
 				EE7BE0071EB8E3C3003CB440 /* AppDelegate.swift in Sources */,
+				EE75E3FE1EBD8DCB0097C485 /* Constants.swift in Sources */,
+				EE75E4001EBD92240097C485 /* CardBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
